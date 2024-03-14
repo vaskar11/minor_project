@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+body {
+  background-image: url("parrot-3601194_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(12, 12, 12);
+  background-position: right;
+}
+
+/* heading section */
+.heading {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 13px;
+  align-items: center;
+  /* border-bottom: 1px solid rgb(19, 22, 37); */
+  width: 100%;
+  justify-content: left;
+  margin-left: 13px;
+  /* box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.2), 5px -20px 20px 0 rgba(230, 222, 222, 0.19); */
+}
+
+h2 {
+  text-decoration: underline;
+  color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 1.5em; /* Default font size */
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  /* Adjust font size for screens with width 600px and above */
+  h2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Adjust font size for screens with width 900px and above */
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
+/* Image section */
+
+#img-place {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid rgb(12, 12, 12); */
+  border-radius: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left:5%;
+  width: 50%;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(230, 222, 222, 0.19); */
+  background-position: center;
+  background-size: cover;
+}
+
+#img-place1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgb(91, 92, 94);
+  border-radius: 8px;
+  width: 75%;
+  height: 55vh;
+  padding: 7px;
+  background-color: rgb(42, 43, 45);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(230, 222, 222, 0.19);
+  color: rgba(59, 56, 56, 0.45);
+  margin-bottom: 10px;
+}
+
+.plus-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.txt,
+p {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+  margin-top: 7px;
+}
+.text{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.icon1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus-icon:hover {
+  border: 1px solid rgb(229, 228, 228);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(230, 222, 222, 0.19);
+  cursor: pointer;
+}
+
+.image:hover {
+  border: 1px solid rgb(229, 228, 228);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(61, 60, 60, 0.19);
+  color: rgb(51, 102, 153);
+}
+
+.text {
+  color: white;
+}
+
+.buttons {
+  width: 80%;
+}
+
+button {
+  margin-top: 13px;
+  border-radius: 25px;
+  background-color: white;
+  color: rgb(51, 102, 153);
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 140%;
+  font-weight: 600;
+  border: 1.6px solid rgb(130, 130, 130);
+}
+
+button:hover {
+  background-color: rgb(40, 40, 40);
+  color: rgb(187, 236, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+input {
+  display: none;
+}
+
+.txt5 {
+  opacity: 0;
+}
+
+.plus-icon5 {
+  height: 3px;
+  opacity: 0;
+  cursor: auto;
+}
+
+#displayedImage {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

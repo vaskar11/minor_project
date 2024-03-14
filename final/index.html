@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird detector</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <section id="header">
+    <div class="heading">
+      <div class="txt1">
+        <h2>Bird Species Detection System
+        </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="img-place">
+  <div id="img-place1" class="image">
+    <img id="displayedImage" src="../uploads/upload.png" />
+    <div id="pic" class="icon1">
+      <label for="image_input"><img src="plus.png" class="plus-icon" , id="display-pic"></label>
+      <input type="file" accept="image/jpeg, image/png , image/jpg" id="image_input">
+    </div>
+    <div id="txt_main" class="txt">
+      <p>Choose An Image</p>
+    </div>
+  </div>
+  <div id = "predTxt" class="text">
+    <p class="prediction-text" id="predictText" hidden></p>
+  </div>
+  <div class="buttons">
+    <div class="reset">
+      <button id="resetButton" >Reset</button>
+    </div>
+    <div class="check">
+      <button id="backend" type="submit">Predict</button>
+    </div>
+  </div>
+</section>
+  <div class="output" id="result">
+    
+  </div>
+  <script src="pds.js"></script>
+</body>
+
+</html>
